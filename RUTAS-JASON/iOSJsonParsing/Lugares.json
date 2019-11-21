@@ -1,0 +1,31 @@
+{
+    "data" : [
+        [ 1,"Anexo de Ingenieria","C.U., 03000 Ciudad de México, CDMX" ,19.3272804,
+          -99.182670,"Anexo"],
+      [2, "Facultad de Medicina","Av. Universidad 3000, C.U., Coyoacán, 04510 Ciudad de México, CDMX",19.33289, -99.18002,"Medicina" ],
+      [3,"Espacio Escultorico","Centro Cultural Universitario, Mario de La Cueva, Universitaria, Coyoacán, 04510 Ciudad de México, CDMX",19.318546,-99.177089,"Espacio"],
+      [4,"Facultad de Psicologia","Circuito Ciudad Universitaria Avenida, C.U., 04510 Ciudad de México",19.334768,-99.189195,"Psicologia"],
+      [5,"Alberca Olímpica Universitaria","Circuto Escolar 3000, Coyoacán, 04360 Ciudad de México, CDMX",19.330122,-99.184646,"Alberca"],
+      [6,"Facultad de Arquitectura","Cto bicipuma, C.U., Coyoacán, 04510 Ciudad de México, Méx.",19.330943,-99.186739,"Arquitectura"],
+      [7,"Rectoria UNAM","C.U., Coyoacán, 04510 Ciudad de México, CDMX",19.332139,-99.18813,"Rectoria"],
+      [8,"Facultad de Derecho","Cto. Interior s/n, C.U., Coyoacán, 04510 Ciudad de México, CDMX",19.334409,-99.185585,"Derecho"],
+      [9,"Facultad de Filosofia","Cto. Interior s/n, C.U., Coyoacán, 04510 Ciudad de México, CDMX",19.33427,-99.186867,"Filosofia"],
+      [10,"Facultad de Odontología","Av. Universidad 3000, Copilco Universidad, Coyoacán, 04360 Ciudad de México, CDMX",19.334150,-99.181423,"Facultad de Odontología"],
+      [11,"Campo Beisbol Cu","Avenida Universidad 3000, C.U., Coyoacán, 04360 Ciudad de México, CDMX",19.325440,-99.190263,"Campo Beisbol Cu"],
+      [12,"Jardin Botánico","C.U., Coyoacán, 04510 Ciudad de México, CDMX",19.320245,-99.193153,"Jardin Botánico"],
+      [13,"Museo Universitario de Arte Contemporáneo","Insurgentes 3000, C.U., Coyoacán, 04510 Ciudad de México, CDMX",19.314672,-99.185369,"Museo Universitario de Arte Contemporáneo"],
+      [14,"Universum Museo de las Ciencias","Universidad Nacional Autónoma de México, Cto. Centro Cultural de, C.U., Coyoacán, 04510 Ciudad de México, CDMX",19.311246,-99.180620,"Universum Museo de las Ciencias"],
+      [15,"Facultad de Contaduría y Administración","Av. Universidad 3000, C.U., Coyoacán, 04510 Ciudad de México, CDMX",19.324253,-99.184575,"Facultad de Contaduría y Administración"],
+      [16,"Estadio Olimpico Universitario","Av de los Insurgentes Sur S/N, C.U., 04510 Ciudad de México, CDMX",19.332047,-99.192143,"Estadio"],
+      [17,"Tapatio","Escolar D, C.U., Coyoacán, 04510 Coyacán, CDMX",19.326659,-99.186801,"Tapatio"],
+      [18,"Metro Universidad","Av Antonio Delfin Madrigal, C.U., 04510 Ciudad de México, CDMX",19.323768,-99.174903,"Metro"],
+      [19,"Instituto de Investigaciones Históricas","Circuito, Mario de La Cueva S/n, C.U., Coyoacán, 04510 Ciudad de México, CDMX",19.315814,-99.181465,"Instituto de Investigaciones Históricas"],
+      [20,"Tienda Unam","Mario de La Cueva s/n, C.U., Coyoacán, 04510 Ciudad de México, CDMX",19.320995,-99.175513,"Tienda Unam"]
+    
+      
+      
+]
+}
+
+
+

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kjx-Ya-W3z">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOSJsonParsing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gEn-if-tS4">
+                                <rect key="frame" x="0.0" y="115.5" width="375" height="551.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="g9v-2E-BGb" detailTextLabel="vmC-nm-gh0" rowHeight="80" style="IBUITableViewCellStyleSubtitle" id="Ig5-xn-bNZ">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ig5-xn-bNZ" id="et2-Yt-ahQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="g9v-2E-BGb">
+                                                    <rect key="frame" x="15" y="20" width="33.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vmC-nm-gh0">
+                                                    <rect key="frame" x="15" y="43.5" width="44" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Ql2-cd-Rie"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Z78-Lw-dwP"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h57-0l-Dke" userLabel="ATRAS">
+                                <rect key="frame" x="158.5" y="73" width="58" height="33"/>
+                                <color key="backgroundColor" red="0.99470574239999998" green="0.32708921460000001" blue="0.36221070049999998" alpha="0.96275684930000005" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="REGRESAR">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="ATRAS">
+                                            <attributes>
+                                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <font key="NSFont" size="15" name="MarkerFelt-Wide"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="cerrar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sjT-KK-MOm"/>
+                                    <action selector="showDireccionesWithSender:" destination="kjx-Ya-W3z" eventType="touchUpInside" id="x8o-4S-g5w"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FDp-CA-2vC">
+                                <rect key="frame" x="258" y="106" width="101" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gEn-if-tS4" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="1Ea-h7-9GH"/>
+                            <constraint firstItem="gEn-if-tS4" firstAttribute="top" secondItem="h57-0l-Dke" secondAttribute="bottom" constant="9.6999999999999993" id="3r0-4S-eJ5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h57-0l-Dke" secondAttribute="trailing" constant="158.5" id="720-PF-STI"/>
+                            <constraint firstItem="gEn-if-tS4" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="BSi-dA-bHk"/>
+                            <constraint firstItem="gEn-if-tS4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="51.5" id="Ge8-fG-bd3"/>
+                            <constraint firstItem="h57-0l-Dke" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="158.5" id="Mvz-QJ-Zqg"/>
+                            <constraint firstItem="gEn-if-tS4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dV1-IF-ZkI"/>
+                            <constraint firstItem="h57-0l-Dke" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="9" id="syY-ng-bXs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="gEn-if-tS4" id="Ea7-Ek-YDy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1768.8" y="130.88455772113943"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="f2u-ay-wi7">
+            <objects>
+                <navigationController id="1y7-Uo-8No" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9L3-jh-8zf">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="kjx-Ya-W3z" kind="relationship" relationship="rootViewController" id="P2n-6W-ncW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r6s-ur-Xwi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="226" y="131"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="AFC-gX-2Xb">
+            <objects>
+                <viewController id="kjx-Ya-W3z" customClass="SecondViewController" customModule="iOSJsonParsing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8CN-zq-OOk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Wdh-yD-ixr">
+                                <rect key="frame" x="0.0" y="154" width="375" height="513"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aKS-nR-MlM" userLabel="REGRESAR">
+                                <rect key="frame" x="288" y="615" width="71" height="32"/>
+                                <color key="backgroundColor" red="0.99470574239999998" green="0.32708921460000001" blue="0.36221070049999998" alpha="0.96275684930000005" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="TRAZAR RUTA">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="REGRESAR">
+                                            <attributes>
+                                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <font key="NSFont" size="15" name="MarkerFelt-Wide"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="INICIOWithSender:" destination="kjx-Ya-W3z" eventType="touchUpInside" id="JCg-0i-h7v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Z0-b9-l6P" userLabel="TRAZAR RUTA">
+                                <rect key="frame" x="252" y="167" width="107" height="31.5"/>
+                                <color key="backgroundColor" red="0.99470574239999998" green="0.32708921460000001" blue="0.36221070049999998" alpha="0.96275684930000005" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="REGRESAR">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="TRAZAR RUTA">
+                                            <attributes>
+                                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <font key="NSFont" size="15" name="MarkerFelt-Wide"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="showDireccionesWithSender:" destination="kjx-Ya-W3z" eventType="touchUpInside" id="w7B-gr-g30"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7yC-mN-4kV">
+                                <rect key="frame" x="298" y="206" width="61" height="32"/>
+                                <color key="backgroundColor" red="0.99470574239999998" green="0.32708921460000001" blue="0.36221070049999998" alpha="0.96275684930000005" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="LISTA">
+                                            <attributes>
+                                                <font key="NSFont" size="15" name="MarkerFelt-Wide"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="ech-5f-Mof"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yaJ-oy-ocm">
+                                <rect key="frame" x="55" y="78" width="265" height="30"/>
+                                <color key="backgroundColor" red="0.31918720319999999" green="0.85166164339999995" blue="0.7885228742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="TRAZAR RUTA">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="MarkerFelt-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="1pg-VO-Zqp">
+                                <rect key="frame" x="100" y="118" width="175" height="29"/>
+                                <segments>
+                                    <segment title="Standar"/>
+                                    <segment title="Satellite"/>
+                                </segments>
+                                <connections>
+                                    <action selector="cambiarVista:" destination="kjx-Ya-W3z" eventType="valueChanged" id="Amo-Y1-2Qo"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eWd-s4-FGx" firstAttribute="trailing" secondItem="aKS-nR-MlM" secondAttribute="trailing" constant="16" id="6HA-me-mVF"/>
+                            <constraint firstItem="2Z0-b9-l6P" firstAttribute="top" secondItem="eWd-s4-FGx" secondAttribute="top" constant="103" id="6Sy-sv-iEC"/>
+                            <constraint firstItem="2Z0-b9-l6P" firstAttribute="leading" secondItem="eWd-s4-FGx" secondAttribute="leading" constant="252" id="7GM-Cu-jUV"/>
+                            <constraint firstItem="1pg-VO-Zqp" firstAttribute="leading" secondItem="eWd-s4-FGx" secondAttribute="leading" constant="100" id="8MT-5U-IVH"/>
+                            <constraint firstItem="7yC-mN-4kV" firstAttribute="leading" secondItem="eWd-s4-FGx" secondAttribute="leading" constant="298" id="8oL-kC-f36"/>
+                            <constraint firstItem="eWd-s4-FGx" firstAttribute="trailing" secondItem="2Z0-b9-l6P" secondAttribute="trailing" constant="16" id="AaB-Mk-KX1"/>
+                            <constraint firstItem="eWd-s4-FGx" firstAttribute="bottom" secondItem="aKS-nR-MlM" secondAttribute="bottom" constant="20" id="BME-Um-DsZ"/>
+                            <constraint firstItem="7yC-mN-4kV" firstAttribute="top" secondItem="2Z0-b9-l6P" secondAttribute="bottom" constant="7.5" id="EVB-w3-T17"/>
+                            <constraint firstItem="Wdh-yD-ixr" firstAttribute="trailing" secondItem="eWd-s4-FGx" secondAttribute="trailing" id="UKc-0v-ZdE"/>
+                            <constraint firstItem="Wdh-yD-ixr" firstAttribute="top" secondItem="eWd-s4-FGx" secondAttribute="top" constant="90" id="X6Z-zp-SBU"/>
+                            <constraint firstItem="yaJ-oy-ocm" firstAttribute="leading" secondItem="eWd-s4-FGx" secondAttribute="leading" constant="55" id="be6-In-tC6"/>
+                            <constraint firstItem="Wdh-yD-ixr" firstAttribute="top" secondItem="1pg-VO-Zqp" secondAttribute="bottom" constant="8" id="ebG-lb-eye"/>
+                            <constraint firstItem="Wdh-yD-ixr" firstAttribute="top" secondItem="yaJ-oy-ocm" secondAttribute="bottom" constant="46" id="hCT-qg-7GL"/>
+                            <constraint firstItem="eWd-s4-FGx" firstAttribute="trailing" secondItem="7yC-mN-4kV" secondAttribute="trailing" constant="16" id="k6D-Zb-3VU"/>
+                            <constraint firstItem="yaJ-oy-ocm" firstAttribute="top" secondItem="eWd-s4-FGx" secondAttribute="top" constant="14" id="lRf-Nv-JuX"/>
+                            <constraint firstItem="Wdh-yD-ixr" firstAttribute="bottom" secondItem="eWd-s4-FGx" secondAttribute="bottom" id="nNz-9I-c86"/>
+                            <constraint firstItem="aKS-nR-MlM" firstAttribute="leading" secondItem="eWd-s4-FGx" secondAttribute="leading" constant="288" id="uOP-Nm-36F"/>
+                            <constraint firstItem="eWd-s4-FGx" firstAttribute="trailing" secondItem="yaJ-oy-ocm" secondAttribute="trailing" constant="55" id="vFK-Hr-DV0"/>
+                            <constraint firstItem="eWd-s4-FGx" firstAttribute="trailing" secondItem="1pg-VO-Zqp" secondAttribute="trailing" constant="100" id="wCH-h6-gAF"/>
+                            <constraint firstItem="Wdh-yD-ixr" firstAttribute="leading" secondItem="eWd-s4-FGx" secondAttribute="leading" id="zUC-44-JBA"/>
+                            <constraint firstItem="1pg-VO-Zqp" firstAttribute="top" secondItem="yaJ-oy-ocm" secondAttribute="bottom" constant="10" id="zvA-rc-Pq1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eWd-s4-FGx"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="J0l-GY-amC"/>
+                    <connections>
+                        <outlet property="INSTRUCCIONES" destination="yaJ-oy-ocm" id="wfD-dk-V2s"/>
+                        <outlet property="mapa" destination="Wdh-yD-ixr" id="Fg7-Oq-brx"/>
+                        <outlet property="selector" destination="1pg-VO-Zqp" id="5jU-6U-Iqk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8jC-yD-gKF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1004" y="130.88455772113943"/>
+        </scene>
+    </scenes>
+</document>
